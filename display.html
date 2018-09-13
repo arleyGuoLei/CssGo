@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+        }
+        .block{
+            background: red;
+            margin-bottom: 100px;
+            position: relative;
+            /*height: 200px;*/
+        }
+        .block-item{
+            /*position: absolute;*/
+            display: block;
+            background: yellow;
+
+            width: 100px;
+            height: 50px;
+
+            padding: 20px;
+            margin: 30px;
+            border: 2px solid yellow;
+        }
+
+
+
+
+        .inline-item{
+            display: inline;
+            /*inline元素设置width,height属性无效。*/
+            width: 100px;
+            height: 50px;
+
+            /*inline元素的margin和padding属性，
+            水平方向的padding-left, padding-right, margin-left, margin-right都产生边距效果；
+            但竖直方向的padding-top, padding-bottom, margin-top, margin-bottom不会产生边距效果。*/
+
+            padding: 20px;
+            margin: 30px;
+            border: 2px solid yellow;
+            background: green;
+
+        }
+
+
+        .inline-block-item{
+            display: inline-block;
+
+            width: 200px;
+            height: 50px;
+            background: aqua;
+
+            padding: 20px;
+            margin: 30px;
+            border: 2px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <p class="block-item">Block</p>
+        <p class="block-item">Block</p>
+        <p class="block-item">Block</p>
+    </div>
+    
+    <div class="block">
+        <span class="inline-item">inline</span>
+        <span class="inline-item">inline</span>
+        <span class="inline-item">inline</span>
+        <span class="inline-item">inline</span>
+        <span class="inline-item">inline</span>
+    </div>
+
+    <div class="block">
+        <div class="inline-block-item">inline-blcok</div>
+        <div class="inline-block-item">inline-blcok</div>
+        <div class="inline-block-item">inline-blcok</div>
+        <div class="inline-block-item">inline-blcok</div>
+        <div class="inline-block-item">inline-blcok</div>
+    </div>
+
+
+</body>
+</html>
