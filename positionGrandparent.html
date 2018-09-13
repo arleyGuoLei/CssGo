@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>positionGrandparent</title>
+    <style type="text/css">
+        .parent{
+            width: 600px;
+            height: 600px;
+            background: red;
+            position: relative;
+            top: 100px;
+        }
+        .son{
+            width: 300px;
+            height: 300px;
+            background: yellow;
+            position: static;/*默认就是static*/
+        }
+        .grandson{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            top: 50px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="son">
+        <div class="grandson"></div>
+    </div>
+</div>
+</body>
+</html>

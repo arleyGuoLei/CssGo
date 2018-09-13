@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>relative</title>
+    <style type="text/css">
+        .parent{
+            position: relative;
+            height: 500px;
+            width: 500px;
+            background: red;
+
+        }
+
+        .son{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background: gold;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="son">修改son的 margin ,父元素将生成margin-top，子元素相对于父元素垂直位置不变，水平位置生成margin。</div>
+</div>
+
+
+</body>
+</html>
